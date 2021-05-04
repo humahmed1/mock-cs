@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3af86e5a-8e9d-4a81-8224-749aa54b1d85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api-automation/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-automation/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-automation/cmp-mock-cs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/cmp-mock-gcp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-mock-customer-cs/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-mock-customer-cs/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-mock-customer-cs/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-mock-customer-cs/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-mock-customer-cs/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-mock-customer-cs/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-mock-customer-cs/cmp-mock-cs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-mock-customer-cs/cmp-mock-gcp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JenkinsfileGKE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmp-poc-api-static-ip.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmp-mock-customer-cs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-mock-customer-cs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmp-mock-customer-cs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-mock-customer-cs/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +28,14 @@
     <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="317109682380" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210426_0001" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210504_0000" />
+    <property name="jdk.selected.JAVA_MODULE" value="corretto-1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,5 +47,16 @@
       <updated>1619451980239</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

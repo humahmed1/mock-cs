@@ -1,0 +1,53 @@
+pipeline {
+    environment {
+        registry = "humahmed1/repository"
+        registryCredential = 'dockerhub'
+        PATH = '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/humahmed1/google-cloud-sdk/bin/'
+
+    }
+    agent any
+    tools {
+        maven '3.6.3'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn -B -DskipTests clean package -f cmp-mock-customer-cs/pom.xml'
+            }
+        }
+        stage('Unit Test') {
+            steps {
+                sh 'mvn -Dtest=RetailCustomerApplicationTest test -f cmp-mock-customer-cs/pom.xml'
+            }
+            post {
+                always {
+                    junit 'cmp-mock-customer-cs/target/surefire-reports/*.xml'
+                }
+            }
+        }
+        stage('Create GKE Cluster') {
+            steps {
+                sh 'gcloud config set project burner-humahmed1'
+                sh 'gcloud container clusters create cmp-cs-cluster --num-nodes=3'
+                sh 'gcloud container clusters get-credentials cmp-cs-cluster'
+            }
+        }
+        stage('Build Image') {
+            steps {
+                sh 'docker build -t gcr.io/burner-humahmed1/mock-gcp-cs:v1 cmp-mock-customer-cs'
+            }
+        }
+        stage('Push Image to Container Registry') {
+            steps {
+                sh 'gcloud auth configure-docker'
+                sh 'docker push gcr.io/burner-humahmed1/mock-gcp-cs:v1'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'kubectl create deployment cs-server --image=gcr.io/burner-humahmed1/mock-gcp-cs:v1'
+                sh 'kubectl apply -f cmp-poc-api-static-ip.yaml'
+            }
+        }
+    }
+}
