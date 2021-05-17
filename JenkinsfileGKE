@@ -28,7 +28,7 @@ pipeline {
         stage('Create GKE Cluster') {
             steps {
                 sh 'gcloud config set project burner-humahmed1'
-                sh 'gcloud container clusters get-credentials cmp-cluster'
+                shS 'gcloud container clusters get-credentials cmp-cluster'
             }
         }
         stage('Build Image') {
@@ -46,6 +46,17 @@ pipeline {
             steps {
                 sh 'kubectl create deployment cs-server --image=gcr.io/burner-humahmed1/mock-gcp-cs:v1'
                 sh 'kubectl apply -f cmp-poc-api-static-ip.yaml'
+            }
+        }
+        stage('Integration Test') {
+            steps{
+                sleep 60
+                sh 'mvn -Dtest=CsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
+            }
+            post {
+                always {
+                    cucumber 'api-automation/target/karate-reports/*.json'
+                }
             }
         }
     }
