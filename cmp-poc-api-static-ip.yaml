@@ -9,9 +9,9 @@ spec:
   externalTrafficPolicy: Cluster
   ports:
     - nodePort: 32330
-      port: 8070
+      port: 8071
       protocol: TCP
-      targetPort: 8070
+      targetPort: 8071
   selector:
     app: cs-server
   sessionAffinity: None
