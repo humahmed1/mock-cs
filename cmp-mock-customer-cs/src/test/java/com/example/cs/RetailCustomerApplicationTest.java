@@ -26,7 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @EnableWebMvc
 @Transactional
-@ContextConfiguration(classes = RetailCustomerApplication.class)
+@ContextConfiguration(classes = RetailCustomerApplicationCS.class)
 public class RetailCustomerApplicationTest {
     @Autowired
     private MockMvc mockMvc;

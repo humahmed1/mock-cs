@@ -14,7 +14,6 @@
 	<name>cmp</name>
 	<description>CMP project for GCP</description>
 	<properties>
-		<start-class>com.example.cs.RetailCustomerApplication</start-class>
 		<java.version>1.8</java.version>
 	</properties>
 	<packaging>jar</packaging>
