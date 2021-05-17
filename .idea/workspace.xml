@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3af86e5a-8e9d-4a81-8224-749aa54b1d85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-mock-customer-cs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-mock-customer-cs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-automation/src/test/resources/features/retailCustomer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/src/test/resources/features/retailCustomer.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
     <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="317109682380" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210517_0021" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210517_0022" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>

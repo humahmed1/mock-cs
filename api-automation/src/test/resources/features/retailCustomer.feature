@@ -1,7 +1,7 @@
 Feature: Retail Customer API (CS)
 
   Background:
-    * url 'http://localhost:8071/cs/customer'
+    * url 'http://cmp-poc-api.com:8071/cs/customer'
 
   Scenario Outline: Retrieve customers
 
