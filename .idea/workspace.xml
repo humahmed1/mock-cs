@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3af86e5a-8e9d-4a81-8224-749aa54b1d85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JenkinsfileGKE" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsfileGKE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-automation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-poc-api-static-ip.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-poc-api-static-ip.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,7 @@
     <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="317109682380" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210517_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210517_0003" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
