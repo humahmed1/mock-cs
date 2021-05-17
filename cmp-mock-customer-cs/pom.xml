@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>cmp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cmp</name>
+	<name>cs</name>
 	<description>CMP project for GCP</description>
 	<packaging>jar</packaging>
 	<properties>
