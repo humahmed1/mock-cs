@@ -16,7 +16,7 @@ import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
-public class CsKarateTest {
+public class CsKarateRunner {
     @Test
     public void testParallel() {
         Results results = Runner.path("classpath:features/retailCustomer.feature").outputCucumberJson(true).parallel(1);
